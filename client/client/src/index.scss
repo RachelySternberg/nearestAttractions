@@ -1,0 +1,23 @@
+
+@import 'assets/styles/variables/index';
+@import 'assets/styles/reset';
+
+@import-normalize;
+
+body {
+  margin: 0;
+  font-family: $font-family--main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a:visited, a:active{
+ color: $color-blue;
+}

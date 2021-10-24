@@ -1,0 +1,56 @@
+@import "../../assets/styles/variables/_index.scss";
+
+.select-container {
+    margin: 2.5rem;
+    
+    gap: 2rem;
+}
+.select {
+    position: relative;
+    display: flex;
+    width: 13rem;
+    height: 3rem;
+    line-height: 3;
+    background: white;
+    overflow: hidden;
+    &-title{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    &::after {
+        content: "\25BC";
+        position: absolute;
+        top: 0;
+        inset-inline-end: 0;
+        padding: 0 1em;
+        background: white;
+        cursor: pointer;
+        pointer-events: none;
+        transition: 0.25s all ease;
+        
+        color:$color-blue;
+    }
+    &:hover::after {
+        color: $color-red;
+    }
+    &-box {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: white;
+        background-image: none;
+        flex: 1;
+        padding: 0 0.5em;
+        color: black;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: "Open Sans", sans-serif;
+        &::-ms-expand {
+            display: none;
+        }
+    }
+}
