@@ -61,7 +61,6 @@ export default connect(
       {nearestAttractionsBtn && (
         <NearestAttractionsBtn lat={myLocation.x} lng={myLocation.y} />
       )}
-      {/* <button onClick={<NearestAttractionsBtn/>}>Nearest Attractions</button> */}
     </div>
   );
 });

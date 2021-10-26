@@ -4,7 +4,6 @@ import calculateDistance from "../../utils/calculateDistance";
 import CategoriesDropdown from "../../components/CategoriesDropdown/CategoriesDropdown";
 import AttractionCard from "../../components/AttractionCard/AttractionCard";
 
-// allAttractions.filter((item)=>{return item.type!=myType && item.dis<600})
 export default function NearestAttractions(props) {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -12,11 +11,8 @@ export default function NearestAttractions(props) {
   const [categories, setCategories] = useState([]);
   const [location, setLocation] = useState([{ lat: 0, lng: 0 }]);
   const [filter, setFilter] = useState("הצג הכל");
-  //const [favs, setFavs] = useState([]);
   const setSelectedCategory = (category) => setFilter(category);
-  /*const setFavourite = (id) => {
-    setFavs(id)
-  }*/
+ 
 
   useEffect(() => {
     setLocation(props.location.state);
@@ -63,7 +59,7 @@ export default function NearestAttractions(props) {
               else return item.type.includes(filter);
             })
             .map((item) => (
-              <AttractionCard key={item.id} item={item}  /*onClick={setFavourite}*//>
+              <AttractionCard key={item.id} item={item} />
             ))}
         </div>
       </>

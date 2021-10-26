@@ -2,7 +2,7 @@
   "name": "nearest-attractions",
   "version": "1.0.0",
   "description": "nearest attractions",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

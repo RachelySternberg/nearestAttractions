@@ -7,8 +7,6 @@ attractions:[],
 location:{}
 };
 
-// action={type:'SET_ATTRACTIONS',payload:['a1','a2']}
-
 const reduce=produce((state,action)=>{
   console.log(action.type);
   console.log(action.payload);

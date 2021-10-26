@@ -1,5 +1,5 @@
 export default function calculateDistance  (lat1, lon1, lat2, lon2) {
-  var R = 6371; // km
+  var R = 6371; 
   var dLat = degtoRad(lat2 - lat1);
   var dLon = degtoRad(lon2 - lon1);
   var latitude1 = degtoRad(lat1);
